@@ -1,6 +1,3 @@
-React starter code with Tailwind using Vite
+3d ripple
 
----
-
-- vitejs https://vitejs.dev/
-- tailwindcss https://tailwindcss.com/
+YT: https://www.youtube.com/watch?v=wRmeFtRkF-8
