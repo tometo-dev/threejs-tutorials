@@ -1,3 +1,4 @@
+import { OrbitControls } from "@react-three/drei"
 import { Canvas, useFrame, useLoader } from "@react-three/fiber"
 import * as React from "react"
 import * as THREE from "three"
@@ -9,7 +10,7 @@ const sep = 3
 
 let t = 0
 const f = 0.002
-const a = 3
+const a = 5
 
 const graph = (x: number, z: number) => {
   return Math.sin(f * (x ** 2 + z ** 2 + t)) * a
@@ -82,6 +83,7 @@ function AnimationCanvas() {
   return (
     <Canvas camera={{ position: [100, 10, 0], fov: 75 }}>
       <Points />
+      <OrbitControls autoRotate autoRotateSpeed={0.2} />
     </Canvas>
   )
 }

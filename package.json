@@ -12,6 +12,7 @@
     "lint:fix": "eslint \"src/**/*.{js,jsx,ts,tsx}\"  --fix"
   },
   "dependencies": {
+    "@react-three/drei": "^5.0.0",
     "@react-three/fiber": "^6.1.4",
     "@types/node": "^15.3.0",
     "react": "^17.0.0",
