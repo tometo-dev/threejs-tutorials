@@ -38,10 +38,7 @@ function Points() {
   const positions = getInitialPositions()
 
   useFrame(() => {
-    if (t >= 10000) {
-      t = 0
-    }
-    t += 15
+    t = (t + 15) % 9000
     const positions = bufferRef.current.array
     let i = 0
     for (let xi = 0; xi < count; xi++) {
